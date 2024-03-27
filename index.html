@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site com JavaScript</title>
+    <title>Instituto de Evolução Profissional -- PDI </title>
     <style>
         /* Estilos CSS podem ser adicionados aqui */
         body {
@@ -12,13 +12,13 @@
             padding: 0;
         }
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #FF0000;
+            color: #3b3333;
             padding: 20px;
             text-align: center;
         }
         nav {
-            background-color: #444;
+            background-color: #008000;
             padding: 10px;
             text-align: center;
         }
@@ -34,8 +34,8 @@
             padding: 20px;
         }
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #ffa500 ;
+            color: #3b3333;
             text-align: center;
             padding: 10px;
             position: fixed;
@@ -46,7 +46,7 @@
 </head>
 <body>
     <header>
-        <h1>Meu Site com JavaScript</h1>
+        <h1>Instituto de Evolução Profissional -- PDI </h1>
     </header>
     <nav>
         <a href="#" id="home">Página Inicial</a>
@@ -54,28 +54,31 @@
         <a href="#" id="contact">Contato</a>
     </nav>
     <main>
-        <h2 id="welcomeMessage">Bem-vindo ao meu site!</h2>
-        <p>Este é um exemplo de um site simples criado com HTML5 e JavaScript.</p>
+    <h2 id="welcomeMessage">Bem-vindo ao meu site!</h2>
+    <div style="display: flex;">
+        <div style="margin-right: 10px;">
+            <img src="C:\Users\felip\Documents\Projeto aleatório\2024-03-01.jpg" alt="Descrição da imagem">
+            <p>Professores super atenciosos com cada alunos para lidar mais auto confiança para o aluno</p>
+        </div>
+        <div>
+            <img src="Imagem do WhatsApp de 2022-11-17 à(s) 12.15.29.jpg" alt="Descrição da imagem">
+            <p>Escola em Palmeira dos Índios, Alagoas</p>
+        </div>
+    </div>
 
         <!-- Aba de Sobre -->
         <div id="aboutTab" style="display: none;">
-            <h2>Sobre Nós</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac risus velit. Nam dapibus nisl vel augue vulputate, id tempus purus hendrerit.</p>
+            <h1>Sobre IEP</h1>
+            <p>O IEP – Instituto de Evolução Profissional é uma rede de ensino, presente em cidades do nordeste, possuí um método educacional com mais de 30 anos de mercado. Nossa instituição é formada por diversos especialistas em formar profissionais para enfrentar os desafios de um mercado cada vez mais competitivo. Confira um pouco sobre nossa missão, visão e valores.</p>
         </div>
 
         <!-- Aba de Contato -->
         <div id="contactTab" style="display: none;">
-            <h2>Entre em Contato</h2>
-            <form id="contactForm">
-                <input type="text" id="name" placeholder="Seu Nome">
-                <input type="email" id="email" placeholder="Seu E-mail">
-                <textarea id="message" placeholder="Sua Mensagem"></textarea>
-                <button type="submit">Enviar Mensagem</button>
-            </form>
+            <h2>Entre em contato conosco pelo número</h2>
+            <strong>(82) 99695-1015</strong>
         </div>
-    </main>
     <footer>
-        <p>&copy; 2024 Meu Site - Todos os direitos reservados.</p>
+        <p>&copy; 2024 IEP Palmeira dos Índios -AL</p>
     </footer>
 
     <script>
@@ -93,22 +96,11 @@
         });
 
         document.getElementById('contact').addEventListener('click', function() {
-            document.getElementById('welcomeMessage').textContent = 'Entre em contato conosco!';
             document.getElementById('aboutTab').style.display = 'none';
             document.getElementById('contactTab').style.display = 'block';
         });
 
-        // Adicionando a funcionalidade de enviar o formulário de contato (pode ser implementado em JavaScript)
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Impede o envio padrão do formulário
-            // Aqui você pode adicionar lógica para enviar o formulário
-            // Por exemplo, você pode usar AJAX para enviar os dados para um servidor
-            alert('Mensagem enviada com sucesso!');
-            // Limpar os campos do formulário após o envio
-            document.getElementById('name').value = '';
-            document.getElementById('email').value = '';
-            document.getElementById('message').value = '';
-        });
+        
     </script>
 </body>
 </html>
